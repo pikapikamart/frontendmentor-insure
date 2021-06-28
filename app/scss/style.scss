@@ -163,16 +163,13 @@ h4 {
 }
 
 .cta {
-    background-color: variables.$d-violet;
     margin-bottom: 9.375rem;
-
-    &__wrapper {
-        @extend %overall_wrapper;
-        padding: 0 10.25rem;
-    }
+    @extend %overall_wrapper;
+    padding: 0 10.25rem;
 
     &__holder {
         align-items: center;
+        background-color: variables.$d-violet;
         height: 15.625rem;
         padding: 0 5rem;
         position: relative;
@@ -424,10 +421,7 @@ h4 {
     }
 
     .cta {
-
-        &__wrapper {
-            padding: 0 1.5rem;
-        }
+        padding: 0 1.5rem;
     }
 
     .footer {
@@ -580,11 +574,8 @@ h4 {
     }
 
     .cta {
+        padding: 0;
         text-align: center;
-
-        &__wrapper {
-            padding: 0;
-        }
 
         &__holder {
             flex-direction: column;

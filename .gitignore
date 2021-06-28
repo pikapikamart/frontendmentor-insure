@@ -13,7 +13,4 @@
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
-<<<<<<< HEAD
 /node_modules
-=======
->>>>>>> 88c1549c06c6098e1b2357673154ae102e9ab37f

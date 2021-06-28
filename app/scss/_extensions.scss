@@ -1,3 +1,75 @@
+<<<<<<< HEAD
+@use "variables";
+
+%btn {
+    font-size: 1rem;
+    padding: 0.625rem 1.6875rem;
+    transition: background-color 0.35s ease,
+                color 0.5s ease;
+    z-index: 20;
+}
+
+%btn--black {
+    @extend %btn;
+    border: 2px solid variables.$d-violet;
+    color: variables.$d-violet;
+
+    &:hover {
+        background-color: variables.$vd-violet;
+        color: #FFFFFF;
+    }
+}
+
+%btn--white {
+    @extend %btn;
+    background-color: variables.$d-violet;
+    border: 2px solid variables.$vl-gray;
+    color: variables.$vl-gray;
+
+    &:hover {
+        background-color: variables.$vl-gray;
+        color: variables.$d-violet;
+    }
+
+    &:focus-visible {
+        outline: 3px dashed #FFFFFF;
+        outline-offset: 3px;
+    }
+}
+
+%section {
+    display: flex;
+    flex-direction: column;
+}
+
+%section--main {
+    @extend %section;
+    gap: 1.5rem 0;
+}
+
+%gutter {
+    display: flex;
+    justify-content: space-between;
+}
+
+%line {
+    padding-top: 3.875rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 9.5rem;
+    }
+}
+
+%overall_wrapper {
+    max-width: 100rem;
+    margin: 0 auto;
+=======
 @use "variables";
 
 %btn {
@@ -58,4 +130,5 @@
         top: 0;
         width: 9.5rem;
     }
+>>>>>>> 88c1549c06c6098e1b2357673154ae102e9ab37f
 }
